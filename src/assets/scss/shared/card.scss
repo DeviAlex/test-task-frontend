@@ -24,10 +24,8 @@
   &__title, &__text {
     margin: 15px 0;
   }
-}
 
-@include breakpoint-and-smaller(tablet) {
-  .card {
+  @include breakpoint-and-smaller(tablet) {
     &__text {
       font-size: 12px;
     }

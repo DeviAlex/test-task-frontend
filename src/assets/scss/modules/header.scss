@@ -18,38 +18,36 @@
     display: flex;
     justify-content: center;
   }
-}
 
-.burger {
-  height: 36px;
-  position: absolute;
-  top: 32%;
-  left: 0;
-  cursor: pointer;
-}
+  .burger {
+    height: 36px;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    cursor: pointer;
+  }
 
-@include breakpoint-and-smaller(laptop) {
-  .header {
+  @include breakpoint-and-smaller(laptop) {
     max-height: 120px;
-  }
-  .logo {
-    max-height: 80px;
-  }
-}
 
-@include breakpoint-and-smaller(mobile) {
-  .header {
+    .logo {
+      max-height: 80px;
+    }
+  }
+
+  @include breakpoint-and-smaller(mobile) {
     padding: 10px 0;
     max-height: 80px;
 
     &__container {
       margin: 0 15px;
     }
-  }
-  .burger {
-    height: 24px;
-  }
-  .logo {
-    max-height: 60px;
+
+    .burger {
+      height: 24px;
+    }
+    .logo {
+      max-height: 60px;
+    }
   }
 }

@@ -35,10 +35,8 @@
   &.-active {
     transform: translateX(0);
   }
-}
 
-@include breakpoint-and-smaller(mobile) {
-  .sidebar {
+  @include breakpoint-and-smaller(mobile) {
     width: 100vw;
     transform: translateX(-100vw);
   }
