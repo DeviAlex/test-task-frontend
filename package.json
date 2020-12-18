@@ -1,7 +1,7 @@
 {
-  "name": "webpacktemplate",
+  "name": "testtask",
   "version": "1.0.0",
-  "description": "My template + pug",
+  "description": "Frontend test task for Etton",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
@@ -11,13 +11,13 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "https://github.com/vedees",
+  "author": "https://github.com/DeviAlex",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vedees/webpack-template-pug.git"
+    "url": "git+https://github.com/DeviAlex/test-task-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/vedees/webpack-template-pug/issues"
+    "url": "https://github.com/DeviAlex/test-task-frontend/issues"
   },
   "keywords": [
     "webpack",
@@ -26,8 +26,7 @@
     "bable",
     "bable7",
     "scss",
-    "pug",
-    "vue"
+    "pug"
   ],
   "license": "MIT",
   "devDependencies": {
