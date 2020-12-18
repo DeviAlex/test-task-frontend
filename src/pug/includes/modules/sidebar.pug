@@ -1,9 +1,8 @@
-aside.sidebar
-  .header
+aside.sidebar(data-selector="sidebar")
+  .sidebar__header.header
     .header__container
-      img(src="/assets/img/cross.svg", alt="").burger.close-menu
-  ul
-    +sidebarItem("Main page", "/")
-    +sidebarItem("Card list", "/list.html")
-    //- li.sidebar__item Main page
-    //- li.sidebar__item Card list
+      img(src="/assets/img/cross.svg", alt="").burger.close-menu(data-selector="close-menu")
+  nav
+    ul
+      +sidebarItem("Main page", "/")
+      +sidebarItem("Card list", "/list.html")

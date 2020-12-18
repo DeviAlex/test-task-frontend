@@ -21,8 +21,14 @@
   :-ms-input-placeholder      {@content}
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+@mixin breakpoint-and-bigger($media) {
+  @media (min-width: map-get($breakpoints, $media)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-and-smaller($media) {
+  @media (max-width: map-get($breakpoints, $media)) {
+    @content;
+  }
 }

@@ -3,5 +3,11 @@ extends ../layout/main
 block content
   section
     .container.center
-      h1 Card list
-      button.button.open-popup Add item
+      button.button(data-open-popup="new_item") Add item
+      .cards
+        - for (var i = 0; i < 3; ++i) {
+          +card("Card title #1", "/assets/img/cat_tank.jpg", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta blanditiis perspiciatis doloribus ut vel incidunt! Sit adipisci temporibus laborum laboriosam possimus deserunt ad distinctio natus maiores aspernatur! Voluptatum, tenetur harum.")
+          +card("Card title #2", "/assets/img/Austerlitz-baron-Pascal.jpg", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta blanditiis perspiciatis doloribus ut vel incidunt! Sit adipisci temporibus laborum laboriosam possimus deserunt ad distinctio natus maiores aspernatur! Voluptatum, tenetur harum.")
+          +card("Card title #3", "/assets/img/bears.jpg", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta blanditiis perspiciatis doloribus ut vel incidunt! Sit adipisci temporibus laborum laboriosam possimus deserunt ad distinctio natus maiores aspernatur! Voluptatum, tenetur harum.")
+        - }
+        

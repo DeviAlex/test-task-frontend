@@ -1,0 +1,28 @@
+// checkbox style
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  &+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/img/checkbox-default.svg");
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 10px;
+  }
+
+  &:checked+label::before {
+    background-image: url("/assets/img/checkbox-active.svg");
+  }
+}

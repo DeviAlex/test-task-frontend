@@ -2,22 +2,44 @@
 
 .sidebar {
   height: 100vh;
-  position: absolute;
-  width: $defaultWidth ;
+  position: fixed;
+  width: $defaultWidth;
   top: 0;
   left: 0;
+  bottom: 0;
   color: $mainColor;
-  transform: translateX(-$defaultWidth );
+  transform: translateX(-$defaultWidth);
   border-right: 1px solid $mainColor;
   background: $backgroundColor;
   z-index: 1;
+  transition: transform 0.5s;
+
+  &__header {
+    position: initial;
+  }
+
+  &__item {
+    margin: 10px;
+  }
+
+  &__link {
+    display: block;
+    padding: 8px 12px;
+
+    &.-current {
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+  }
+
+  &.-active {
+    transform: translateX(0);
+  }
 }
 
-.sidebar-item {
-  padding: 10px 20px;
-  border-bottom: 1px solid $mainColor;
-}
-
-.sidebar.active {
-  transform: translateX(0);
+@include breakpoint-and-smaller(mobile) {
+  .sidebar {
+    width: 100vw;
+    transform: translateX(-100vw);
+  }
 }

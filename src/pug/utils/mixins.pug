@@ -1,11 +1,17 @@
 mixin sidebarItem(title, href)
-  li.sidebar-item
-    a(href=href)= title
+  li.sidebar__item
+    a(href=href).sidebar__link= title
 
 mixin field(title)
-  li.field
-    span= title
+  label.field
+    span.field__title= title
     if block
       block
     else
       p Нет контента для отображения
+
+mixin card(title, url, text)
+  .card
+    h2.card__title= title
+    img(src=url).card__image
+    .card__text= text

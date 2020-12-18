@@ -1,14 +1,15 @@
 // button style
 
 .button {
-  padding: 20px 40px;
+  padding: 20px 80px;
   color: $mainColor;
   border: 1px solid $mainColor;
   background-color: $backgroundColor;
   cursor: pointer;
   transition: all 0.25s;
+  width: fit-content;
 
-  &_small {
+  &-small {
     padding: 10px 30px;
   }
 
@@ -21,5 +22,16 @@
     color: #404040;
     border-color: #404040;
     cursor: default;
+  }
+}
+
+@include breakpoint-and-smaller(mobile) {
+  .button {
+    padding: 10px 40px;
+    font-size: 14px;
+
+    &-small {
+      padding: 5px 10px;
+    }
   }
 }
