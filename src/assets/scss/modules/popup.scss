@@ -66,10 +66,8 @@
       width: 45%;
     }
   }
-}
 
-@include breakpoint-and-smaller(mobile) {
-  .popup {
+  @include breakpoint-and-smaller(mobile) {
     &__container {
       padding: 0 15px;
     }

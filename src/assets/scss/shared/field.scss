@@ -6,10 +6,8 @@
   &__title {
     padding: 10px 0;
   }
-}
 
-@include breakpoint-and-smaller(mobile) {
-  .field {
+  @include breakpoint-and-smaller(mobile) {
     margin: 10px 0;
   }
 }
