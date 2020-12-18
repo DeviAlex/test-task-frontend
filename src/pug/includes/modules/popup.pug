@@ -1,0 +1,21 @@
+.popup-background
+  .popup-area.close-popup
+  .popup
+    .popup__body
+      .popup__header Create new item
+      .popup__container
+        ul
+          +field("Name:")
+            input(type="text")
+          +field("File:")
+            .upload
+              input.upload__text#upload-text
+              button.upload__button.button Choose file
+              input(type="file" id="input-file").upload__input
+          +field("Description:")
+            textarea#textarea(name="textarea", cols="30", rows="4")
+          input.checkbox#checkbox(type="checkbox", name="checkbox")
+          label(for="checkbox") Show
+          .popup__footer
+            button.button.button_small(disabled="disabled") Ok
+            button.button.button_small.close-popup Cancel

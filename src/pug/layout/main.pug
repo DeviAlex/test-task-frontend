@@ -11,10 +11,11 @@ html(lang='en')
 
   body(class=pageClass)
     .wrapper
-      #app
-        include ../includes/modules/header
-        .content-wrapper
-          block content
-        include ../includes/modules/footer
+      include ../includes/modules/header
+      include ../includes/modules/sidebar
+      include ../includes/modules/popup
+      .content-wrapper
+        block content
+      include ../includes/modules/footer
 
-    block script
+    script(src="../../js/index.js")

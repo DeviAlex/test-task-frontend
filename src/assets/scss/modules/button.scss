@@ -1,0 +1,25 @@
+// button style
+
+.button {
+  padding: 20px 40px;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  background-color: $backgroundColor;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &_small {
+    padding: 10px 30px;
+  }
+
+  &:hover {
+    color: $secondColor;
+    border-color: $secondColor;
+  }
+
+  &:disabled {
+    color: #404040;
+    border-color: #404040;
+    cursor: default;
+  }
+}

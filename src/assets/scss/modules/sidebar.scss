@@ -1,0 +1,23 @@
+// sidebar style
+
+.sidebar {
+  height: 100vh;
+  position: absolute;
+  width: $defaultWidth ;
+  top: 0;
+  left: 0;
+  color: $mainColor;
+  transform: translateX(-$defaultWidth );
+  border-right: 1px solid $mainColor;
+  background: $backgroundColor;
+  z-index: 1;
+}
+
+.sidebar-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid $mainColor;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}

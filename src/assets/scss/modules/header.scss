@@ -1,1 +1,18 @@
 // header style
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $backgroundColor;
+  border-bottom: 1px solid $mainColor;
+  max-height: 140px;
+  height: 100%;
+
+  &__container {
+    height: inherit;
+    margin: 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}

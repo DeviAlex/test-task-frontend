@@ -1,4 +1,11 @@
-mixin item(title, descr)
-  .item
-    h2.item-title= title
-    p.item-descr= descr
+mixin sidebarItem(title, href)
+  li.sidebar-item
+    a(href=href)= title
+
+mixin field(title)
+  li.field
+    span= title
+    if block
+      block
+    else
+      p Нет контента для отображения

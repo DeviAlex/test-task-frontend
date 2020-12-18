@@ -1,1 +1,14 @@
 // footer style
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $backgroundColor;
+  border-top: 1px solid $mainColor;
+
+  &__container {
+    margin: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
