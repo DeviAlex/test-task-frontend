@@ -2,6 +2,10 @@
 
 For this task i was using boilerplate from https://github.com/vedees/webpack-template-pug
 
+Test link: https://github.com/against-v/test-task-frontend
+
+Github pages: https://devialex.github.io/test-task-frontend/list.html
+
 ## Build Setup:
 
 ``` bash
