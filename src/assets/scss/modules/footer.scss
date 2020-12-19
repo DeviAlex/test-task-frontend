@@ -11,4 +11,12 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  @include breakpoint-and-smaller(mobile) {
+    padding: 10px 0;
+
+    &__container {
+      font-size: 14px;
+    }
+  }
 }
